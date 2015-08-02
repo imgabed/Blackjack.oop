@@ -1,0 +1,278 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		863EBFC31B6D8997008E40C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 863EBFC21B6D8997008E40C5 /* main.m */; };
+		863EBFD31B6D8E48008E40C5 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 863EBFD21B6D8E48008E40C5 /* Deck.m */; };
+		863EBFD61B6D8E85008E40C5 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 863EBFD51B6D8E85008E40C5 /* Player.m */; };
+		863EBFD91B6D8F39008E40C5 /* Dealer.m in Sources */ = {isa = PBXBuildFile; fileRef = 863EBFD81B6D8F39008E40C5 /* Dealer.m */; };
+		863EBFDC1B6DA160008E40C5 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 863EBFDB1B6DA160008E40C5 /* Card.m */; };
+		863EBFDF1B6DA16E008E40C5 /* Hand.m in Sources */ = {isa = PBXBuildFile; fileRef = 863EBFDE1B6DA16E008E40C5 /* Hand.m */; };
+		863EBFE21B6DA17D008E40C5 /* Round.m in Sources */ = {isa = PBXBuildFile; fileRef = 863EBFE11B6DA17D008E40C5 /* Round.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		863EBFBD1B6D8997008E40C5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		863EBFBF1B6D8997008E40C5 /* Blackjack.oop */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Blackjack.oop; sourceTree = BUILT_PRODUCTS_DIR; };
+		863EBFC21B6D8997008E40C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		863EBFD11B6D8E48008E40C5 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		863EBFD21B6D8E48008E40C5 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
+		863EBFD41B6D8E85008E40C5 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		863EBFD51B6D8E85008E40C5 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		863EBFD71B6D8F39008E40C5 /* Dealer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dealer.h; sourceTree = "<group>"; };
+		863EBFD81B6D8F39008E40C5 /* Dealer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dealer.m; sourceTree = "<group>"; };
+		863EBFDA1B6DA160008E40C5 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		863EBFDB1B6DA160008E40C5 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		863EBFDD1B6DA16E008E40C5 /* Hand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hand.h; sourceTree = "<group>"; };
+		863EBFDE1B6DA16E008E40C5 /* Hand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hand.m; sourceTree = "<group>"; };
+		863EBFE01B6DA17D008E40C5 /* Round.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Round.h; sourceTree = "<group>"; };
+		863EBFE11B6DA17D008E40C5 /* Round.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Round.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		863EBFBC1B6D8997008E40C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		863EBFB61B6D8997008E40C5 = {
+			isa = PBXGroup;
+			children = (
+				863EBFC11B6D8997008E40C5 /* Blackjack.oop */,
+				863EBFC01B6D8997008E40C5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		863EBFC01B6D8997008E40C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				863EBFBF1B6D8997008E40C5 /* Blackjack.oop */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		863EBFC11B6D8997008E40C5 /* Blackjack.oop */ = {
+			isa = PBXGroup;
+			children = (
+				863EBFD41B6D8E85008E40C5 /* Player.h */,
+				863EBFD51B6D8E85008E40C5 /* Player.m */,
+				863EBFD11B6D8E48008E40C5 /* Deck.h */,
+				863EBFD21B6D8E48008E40C5 /* Deck.m */,
+				863EBFD71B6D8F39008E40C5 /* Dealer.h */,
+				863EBFD81B6D8F39008E40C5 /* Dealer.m */,
+				863EBFDA1B6DA160008E40C5 /* Card.h */,
+				863EBFDB1B6DA160008E40C5 /* Card.m */,
+				863EBFDD1B6DA16E008E40C5 /* Hand.h */,
+				863EBFDE1B6DA16E008E40C5 /* Hand.m */,
+				863EBFE01B6DA17D008E40C5 /* Round.h */,
+				863EBFE11B6DA17D008E40C5 /* Round.m */,
+				863EBFC21B6D8997008E40C5 /* main.m */,
+			);
+			path = Blackjack.oop;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		863EBFBE1B6D8997008E40C5 /* Blackjack.oop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 863EBFC61B6D8997008E40C5 /* Build configuration list for PBXNativeTarget "Blackjack.oop" */;
+			buildPhases = (
+				863EBFBB1B6D8997008E40C5 /* Sources */,
+				863EBFBC1B6D8997008E40C5 /* Frameworks */,
+				863EBFBD1B6D8997008E40C5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Blackjack.oop;
+			productName = Blackjack.oop;
+			productReference = 863EBFBF1B6D8997008E40C5 /* Blackjack.oop */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		863EBFB71B6D8997008E40C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Bess Chan";
+				TargetAttributes = {
+					863EBFBE1B6D8997008E40C5 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 863EBFBA1B6D8997008E40C5 /* Build configuration list for PBXProject "Blackjack.oop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 863EBFB61B6D8997008E40C5;
+			productRefGroup = 863EBFC01B6D8997008E40C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				863EBFBE1B6D8997008E40C5 /* Blackjack.oop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		863EBFBB1B6D8997008E40C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				863EBFDF1B6DA16E008E40C5 /* Hand.m in Sources */,
+				863EBFDC1B6DA160008E40C5 /* Card.m in Sources */,
+				863EBFD91B6D8F39008E40C5 /* Dealer.m in Sources */,
+				863EBFD31B6D8E48008E40C5 /* Deck.m in Sources */,
+				863EBFD61B6D8E85008E40C5 /* Player.m in Sources */,
+				863EBFE21B6DA17D008E40C5 /* Round.m in Sources */,
+				863EBFC31B6D8997008E40C5 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		863EBFC41B6D8997008E40C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		863EBFC51B6D8997008E40C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		863EBFC71B6D8997008E40C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		863EBFC81B6D8997008E40C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		863EBFBA1B6D8997008E40C5 /* Build configuration list for PBXProject "Blackjack.oop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				863EBFC41B6D8997008E40C5 /* Debug */,
+				863EBFC51B6D8997008E40C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		863EBFC61B6D8997008E40C5 /* Build configuration list for PBXNativeTarget "Blackjack.oop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				863EBFC71B6D8997008E40C5 /* Debug */,
+				863EBFC81B6D8997008E40C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 863EBFB71B6D8997008E40C5 /* Project object */;
+}
