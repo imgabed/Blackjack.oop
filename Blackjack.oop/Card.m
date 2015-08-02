@@ -10,4 +10,20 @@
 
 @implementation Card
 
+- (id)initWithSuit:(SuitType)suit cardValue:(int)value cardType:(CardType)type {
+    self = [super init];
+    if (self) {
+        _suit = suit;
+        _value = value;
+        _type = type;
+        _isFlipped = FALSE;
+        
+        if (type == CardTypeAce)
+        {
+            _isSoft = TRUE;
+        }
+    }
+    return self;
+}
+
 @end
