@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "Dealer.h"
 #import "Player.h"
+#import "Deck.h"
 
 @interface Round : NSObject
 

@@ -1,5 +1,5 @@
 //
-//  Game.m
+//  Round.m
 //  Blackjack.oop
 //
 //  Created by Bess Chan on 8/1/15.
@@ -23,6 +23,7 @@
 - (void) start {
     printf("Starting Round #%d\n", self.number);
     printf("Player: %s\n", [self.player.name UTF8String]);
+    Deck *deck = [[Deck alloc] init];
     
 }
 @end

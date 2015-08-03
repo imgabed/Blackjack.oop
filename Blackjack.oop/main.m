@@ -15,7 +15,7 @@ int main(int argc, const char * argv[]) {
         Dealer *dealer = [[Dealer alloc] init];
         
         printf("Welcome to command line blackjack!\n");
-        printf("Please enter your name:");
+        printf("Please enter your name: ");
         
         char userInput[100];
         scanf("%s", &userInput);
