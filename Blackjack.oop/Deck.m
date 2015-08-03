@@ -8,13 +8,6 @@
 
 #import "Deck.h"
 
-@interface Deck ()
-
-@property (strong, nonatomic) NSMutableArray *cards;
-@property (assign, nonatomic) int numTimesPlayed;
-
-@end
-
 @implementation Deck
 
 - (id)init {
@@ -32,7 +25,6 @@
     [self addCardsWithSuit:SuitTypeClubs];
     [self addCardsWithSuit:SuitTypeHearts];
     [self addCardsWithSuit:SuitTypeSpades];
-    [self printCurrentDeck];
 }
 
 - (void) addCardsWithSuit:(SuitType) suit {
@@ -53,5 +45,28 @@
         printf("%s\n", [card.cardName UTF8String]);
     }
 }
+
+//Shuffling method taken from: http://stackoverflow.com/questions/56648/whats-the-best-way-to-shuffle-an-nsmutablearray
+- (void)shuffle
+{
+    NSUInteger count = [_cards count];
+    for (NSUInteger i = 0; i < count - 1; ++i) {
+        NSInteger remainingCount = count - i;
+        NSInteger exchangeIndex = i + arc4random_uniform((u_int32_t )remainingCount);
+        [_cards exchangeObjectAtIndex:i withObjectAtIndex:exchangeIndex];
+    }
+}
+
+- (Card *)pop {
+    if ([_cards count] == 0) {
+        printf("Error: There are no more cards left in the deck\n");
+        return nil;
+    }
+    Card *card = [_cards objectAtIndex:0];
+    [_cards removeObjectAtIndex:0];
+    return card;
+}
+
+
 
 @end

@@ -11,5 +11,10 @@
 
 @interface Deck : NSObject
 
+@property (strong, nonatomic) NSMutableArray *cards;
+@property (assign, nonatomic) int numTimesPlayed;
+
+- (void)shuffle;
+- (Card *)pop;
 
 @end

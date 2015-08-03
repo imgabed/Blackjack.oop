@@ -7,12 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Hand.h"
+#import "Player.h"
 
-@interface Dealer : NSObject
-
-@property (strong, nonatomic) const NSString *name;
-@property (strong, nonatomic) Hand *hand;
-@property (assign, nonatomic) double winningPercentage;
+@interface Dealer : Player
 
 @end

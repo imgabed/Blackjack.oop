@@ -13,7 +13,7 @@
 		863EBFD91B6D8F39008E40C5 /* Dealer.m in Sources */ = {isa = PBXBuildFile; fileRef = 863EBFD81B6D8F39008E40C5 /* Dealer.m */; };
 		863EBFDC1B6DA160008E40C5 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 863EBFDB1B6DA160008E40C5 /* Card.m */; };
 		863EBFDF1B6DA16E008E40C5 /* Hand.m in Sources */ = {isa = PBXBuildFile; fileRef = 863EBFDE1B6DA16E008E40C5 /* Hand.m */; };
-		863EBFE21B6DA17D008E40C5 /* Round.m in Sources */ = {isa = PBXBuildFile; fileRef = 863EBFE11B6DA17D008E40C5 /* Round.m */; };
+		863EBFE21B6DA17D008E40C5 /* RoundController.m in Sources */ = {isa = PBXBuildFile; fileRef = 863EBFE11B6DA17D008E40C5 /* RoundController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,8 +41,8 @@
 		863EBFDB1B6DA160008E40C5 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
 		863EBFDD1B6DA16E008E40C5 /* Hand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hand.h; sourceTree = "<group>"; };
 		863EBFDE1B6DA16E008E40C5 /* Hand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hand.m; sourceTree = "<group>"; };
-		863EBFE01B6DA17D008E40C5 /* Round.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Round.h; sourceTree = "<group>"; };
-		863EBFE11B6DA17D008E40C5 /* Round.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Round.m; sourceTree = "<group>"; };
+		863EBFE01B6DA17D008E40C5 /* RoundController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundController.h; sourceTree = "<group>"; };
+		863EBFE11B6DA17D008E40C5 /* RoundController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +85,8 @@
 				863EBFDB1B6DA160008E40C5 /* Card.m */,
 				863EBFDD1B6DA16E008E40C5 /* Hand.h */,
 				863EBFDE1B6DA16E008E40C5 /* Hand.m */,
-				863EBFE01B6DA17D008E40C5 /* Round.h */,
-				863EBFE11B6DA17D008E40C5 /* Round.m */,
+				863EBFE01B6DA17D008E40C5 /* RoundController.h */,
+				863EBFE11B6DA17D008E40C5 /* RoundController.m */,
 				863EBFC21B6D8997008E40C5 /* main.m */,
 			);
 			path = Blackjack.oop;
@@ -153,7 +153,7 @@
 				863EBFD91B6D8F39008E40C5 /* Dealer.m in Sources */,
 				863EBFD31B6D8E48008E40C5 /* Deck.m in Sources */,
 				863EBFD61B6D8E85008E40C5 /* Player.m in Sources */,
-				863EBFE21B6DA17D008E40C5 /* Round.m in Sources */,
+				863EBFE21B6DA17D008E40C5 /* RoundController.m in Sources */,
 				863EBFC31B6D8997008E40C5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

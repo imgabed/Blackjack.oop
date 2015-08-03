@@ -8,13 +8,6 @@
 
 #import "Dealer.h"
 
-@interface Dealer ()
-
-@property (assign, nonatomic) int numTimesWon;
-@property (assign, nonatomic) int numTimesPlayed;
-
-@end
-
 @implementation Dealer
 
 @end

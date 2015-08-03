@@ -16,12 +16,12 @@
         _suit = suit;
         _value = value;
         _type = type;
-        _isFlipped = FALSE;
+        _isFlipped = NO;
         _cardName = [NSString stringWithFormat:@"%@ of %@", [self formatCardTypeToString], [self formatSuitTypeToString]];
         
         if (type == CardTypeAce)
         {
-            _isSoft = TRUE;
+            _isSoft = YES;
         }
     }
     return self;
@@ -74,6 +74,15 @@
     }
     
     return cardString;
+}
+
+- (void) printCard {
+    if(_isFlipped) {
+        printf("[%s]\n", [_cardName UTF8String]);
+    }
+    else{
+        printf("[Hidden Card]\n");
+    }
 }
 
 @end
