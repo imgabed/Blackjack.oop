@@ -11,12 +11,13 @@
 
 @interface Hand : NSObject
 
-@property (assign, nonatomic) int lowestValue;
-@property (assign, nonatomic) int highestValue;
-@property (assign, nonatomic) BOOL isSoft;
-@property (strong, nonatomic) NSMutableArray *cards;
+@property (readonly) int lowestValue;
+@property (readonly) int highestValue;
+@property (readonly) BOOL isSoft;
+@property (readonly) BOOL isBusted;
+@property (readonly, strong) NSMutableArray *cards;
 
 - (void)addCard:(Card *)card;
-- (void) printHand;
+- (void)printHand;
 
 @end

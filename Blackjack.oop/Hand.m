@@ -22,6 +22,15 @@
 }
 
 - (void)addCard:(Card *)card {
+    if (card.isSoft) {
+        _isSoft = YES;
+        _highestValue += 11;
+    }
+    else {
+        _highestValue += card.value;
+    }
+    _lowestValue += card.value;
+    
     [_cards addObject:card];
 }
 
@@ -31,5 +40,10 @@
         [card printCard];
     }
 }
+
+- (BOOL) isBusted {
+    return _lowestValue > 21;
+}
+
 
 @end
