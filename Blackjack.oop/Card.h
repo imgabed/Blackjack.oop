@@ -25,14 +25,14 @@ typedef enum {
 
 @interface Card : NSObject
 
-@property (assign, nonatomic) int value;
-@property (assign, nonatomic) BOOL isSoft;
-@property (assign, nonatomic) BOOL isFlipped;
-@property (strong, nonatomic) NSString *cardName;
-@property (assign, nonatomic) CardType type;
-@property (assign, nonatomic) SuitType suit;
+@property (readonly) int value;
+@property (readonly) BOOL isSoft;
+@property BOOL isFlipped;
+@property (readonly, strong) NSString *cardName;
+@property (readonly, assign) CardType type;
+@property (readonly, assign) SuitType suit;
 
 - (id)initWithSuit:(SuitType)suit cardValue:(int)value cardType:(CardType)type;
-- (void) printCard;
+- (void)printCard;
 
 @end
