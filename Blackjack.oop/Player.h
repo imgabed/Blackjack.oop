@@ -11,8 +11,11 @@
 
 @interface Player : NSObject
 
-@property (strong, nonatomic) const NSString *name;
-@property (strong, nonatomic) Hand *hand;
-@property (assign, nonatomic) double winningPercentage;
+@property (readonly, strong) NSString *name;
+@property (readonly, strong) Hand *hand;
+@property (readonly) double winningPercentage;
+
+- (id)initWithName:(NSString *)name;
+- (void)setHand:(Hand *)hand;
 
 @end
