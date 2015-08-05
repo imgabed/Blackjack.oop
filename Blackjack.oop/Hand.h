@@ -13,11 +13,11 @@
 
 @property (readonly) int lowestValue;
 @property (readonly) int highestValue;
+@property (readonly) int highestUnbustedValue;
 @property (readonly) BOOL isSoft;
 @property (readonly) BOOL isBusted;
-@property (readonly, strong) NSMutableArray *cards;
 
 - (void)addCard:(Card *)card;
-- (void)printHand;
+- (void)printHand:(BOOL)showHiddenCard showBusted:(BOOL)showBusted;
 
 @end

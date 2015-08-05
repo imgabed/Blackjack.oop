@@ -8,6 +8,12 @@
 
 #import "Hand.h"
 
+@interface Hand ()
+
+@property (strong) NSMutableArray *cards;
+
+@end
+
 @implementation Hand
 
 - (id)init {
@@ -34,16 +40,31 @@
     [_cards addObject:card];
 }
 
-- (void) printHand {
+- (void)printHand:(BOOL)showHiddenCard showBusted:(BOOL)showBusted{
     for (Card *card in _cards)
     {
-        [card printCard];
+        [card printCard:showHiddenCard];
+    }
+    
+    if (self.isBusted && showBusted) {
+        printf("***BUSTED***\n");
     }
 }
 
-- (BOOL) isBusted {
+- (BOOL)isBusted {
     return _lowestValue > 21;
 }
 
+- (int)highestUnbustedValue {
+    if ([self isBusted]) {
+        return -1;
+    }
+    else if (_highestValue <= 21) {
+        return _highestValue;
+    }
+    else {
+        return _lowestValue;
+    }
+}
 
 @end
