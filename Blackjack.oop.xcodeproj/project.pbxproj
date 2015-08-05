@@ -14,6 +14,7 @@
 		863EBFDC1B6DA160008E40C5 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 863EBFDB1B6DA160008E40C5 /* Card.m */; };
 		863EBFDF1B6DA16E008E40C5 /* Hand.m in Sources */ = {isa = PBXBuildFile; fileRef = 863EBFDE1B6DA16E008E40C5 /* Hand.m */; };
 		863EBFE21B6DA17D008E40C5 /* RoundController.m in Sources */ = {isa = PBXBuildFile; fileRef = 863EBFE11B6DA17D008E40C5 /* RoundController.m */; };
+		863EBFE51B6FD1F4008E40C5 /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 863EBFE41B6FD1F4008E40C5 /* GameController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +44,8 @@
 		863EBFDE1B6DA16E008E40C5 /* Hand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hand.m; sourceTree = "<group>"; };
 		863EBFE01B6DA17D008E40C5 /* RoundController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundController.h; sourceTree = "<group>"; };
 		863EBFE11B6DA17D008E40C5 /* RoundController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundController.m; sourceTree = "<group>"; };
+		863EBFE31B6FD1F4008E40C5 /* GameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameController.h; sourceTree = "<group>"; };
+		863EBFE41B6FD1F4008E40C5 /* GameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 				863EBFE01B6DA17D008E40C5 /* RoundController.h */,
 				863EBFE11B6DA17D008E40C5 /* RoundController.m */,
 				863EBFC21B6D8997008E40C5 /* main.m */,
+				863EBFE31B6FD1F4008E40C5 /* GameController.h */,
+				863EBFE41B6FD1F4008E40C5 /* GameController.m */,
 			);
 			path = Blackjack.oop;
 			sourceTree = "<group>";
@@ -149,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				863EBFDF1B6DA16E008E40C5 /* Hand.m in Sources */,
+				863EBFE51B6FD1F4008E40C5 /* GameController.m in Sources */,
 				863EBFDC1B6DA160008E40C5 /* Card.m in Sources */,
 				863EBFD91B6D8F39008E40C5 /* Dealer.m in Sources */,
 				863EBFD31B6D8E48008E40C5 /* Deck.m in Sources */,
@@ -271,6 +277,7 @@
 				863EBFC81B6D8997008E40C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
