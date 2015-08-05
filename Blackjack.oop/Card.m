@@ -46,7 +46,6 @@
         default:
             [NSException raise:NSGenericException format:@"Unexpected suit format type."];
     }
-    
     return suitString;
 }
 
@@ -72,16 +71,20 @@
         default:
             [NSException raise:NSGenericException format:@"Unexpected card format type."];
     }
-    
     return cardString;
 }
 
-- (void) printCard {
+- (void)printCard:(BOOL)showHiddenCard {
     if(_isFlipped) {
         printf("[%s]\n", [_cardName UTF8String]);
     }
     else{
-        printf("[Hidden Card]\n");
+        if (showHiddenCard) {
+            printf("[%s] (Hidden card)\n", [_cardName UTF8String]);
+        }
+        else {
+            printf("[Hidden card]\n");
+        }
     }
 }
 

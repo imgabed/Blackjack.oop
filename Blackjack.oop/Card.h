@@ -33,6 +33,6 @@ typedef enum {
 @property (readonly, assign) SuitType suit;
 
 - (id)initWithSuit:(SuitType)suit cardValue:(int)value cardType:(CardType)type;
-- (void)printCard;
+- (void)printCard:(BOOL)showHiddenCard;
 
 @end
