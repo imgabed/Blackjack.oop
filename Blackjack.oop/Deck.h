@@ -11,9 +11,6 @@
 
 @interface Deck : NSObject
 
-@property (strong) NSMutableArray *cards;
-@property int numTimesPlayed;
-
 - (void)shuffle;
 - (Card *)pop;
 
