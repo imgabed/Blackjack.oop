@@ -17,5 +17,7 @@
 
 - (id)initWithName:(NSString *)name;
 - (void)setHand:(Hand *)hand;
+- (BOOL)shouldHit;
+- (void)updateStatsDidWin:(BOOL)didWin;
 
 @end
