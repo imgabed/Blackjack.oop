@@ -10,4 +10,11 @@
 
 @implementation Dealer
 
+- (BOOL)shouldHit {
+    if (self.hand.isSoft) {
+        return self.hand.highestValue <= 17;
+    }
+    return self.hand.lowestValue < 17;
+}
+
 @end

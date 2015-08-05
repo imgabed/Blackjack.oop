@@ -11,4 +11,6 @@
 
 @interface Dealer : Player
 
+- (BOOL)shouldHit;
+
 @end
