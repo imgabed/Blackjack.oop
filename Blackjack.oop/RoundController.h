@@ -13,12 +13,7 @@
 
 @interface RoundController : NSObject
 
-@property (assign, nonatomic) Player *player;
-@property (assign, nonatomic) Dealer *dealer;
-@property (assign, nonatomic) Deck *deck;
-@property (assign, nonatomic) int number;
-
-- (void) start;
-- (id)initWithPlayer:(Player *)player dealer:(Dealer *)dealer deck:(Deck *)deck;
+- (void)start;
+- (id)initWithPlayer:(Player *)player dealer:(Dealer *)dealer deck:(Deck *)deck roundNumber:(int)number;
 
 @end
