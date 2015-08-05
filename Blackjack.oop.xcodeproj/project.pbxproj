@@ -46,6 +46,7 @@
 		863EBFE11B6DA17D008E40C5 /* RoundController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundController.m; sourceTree = "<group>"; };
 		863EBFE31B6FD1F4008E40C5 /* GameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameController.h; sourceTree = "<group>"; };
 		863EBFE41B6FD1F4008E40C5 /* GameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameController.m; sourceTree = "<group>"; };
+		86DC052A1B71E360001DF3E6 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,21 +79,22 @@
 		863EBFC11B6D8997008E40C5 /* Blackjack.oop */ = {
 			isa = PBXGroup;
 			children = (
-				863EBFD41B6D8E85008E40C5 /* Player.h */,
-				863EBFD51B6D8E85008E40C5 /* Player.m */,
-				863EBFD11B6D8E48008E40C5 /* Deck.h */,
-				863EBFD21B6D8E48008E40C5 /* Deck.m */,
-				863EBFD71B6D8F39008E40C5 /* Dealer.h */,
-				863EBFD81B6D8F39008E40C5 /* Dealer.m */,
 				863EBFDA1B6DA160008E40C5 /* Card.h */,
 				863EBFDB1B6DA160008E40C5 /* Card.m */,
+				863EBFD71B6D8F39008E40C5 /* Dealer.h */,
+				863EBFD81B6D8F39008E40C5 /* Dealer.m */,
+				863EBFD11B6D8E48008E40C5 /* Deck.h */,
+				863EBFD21B6D8E48008E40C5 /* Deck.m */,
 				863EBFDD1B6DA16E008E40C5 /* Hand.h */,
 				863EBFDE1B6DA16E008E40C5 /* Hand.m */,
+				863EBFD41B6D8E85008E40C5 /* Player.h */,
+				863EBFD51B6D8E85008E40C5 /* Player.m */,
+				863EBFE31B6FD1F4008E40C5 /* GameController.h */,
+				863EBFE41B6FD1F4008E40C5 /* GameController.m */,
 				863EBFE01B6DA17D008E40C5 /* RoundController.h */,
 				863EBFE11B6DA17D008E40C5 /* RoundController.m */,
 				863EBFC21B6D8997008E40C5 /* main.m */,
-				863EBFE31B6FD1F4008E40C5 /* GameController.h */,
-				863EBFE41B6FD1F4008E40C5 /* GameController.m */,
+				86DC052A1B71E360001DF3E6 /* README */,
 			);
 			path = Blackjack.oop;
 			sourceTree = "<group>";

@@ -32,7 +32,7 @@
 }
 
 - (void)start {
-    printf("\n=============================Starting Round #%d=============================\n", self.roundNumber);
+    printf("\n==============Starting Round #%d==============\n", self.roundNumber);
     printf("Player: %s\n", [self.player.name UTF8String]);
     
     [self shuffleDeckIfNeeded];
@@ -123,10 +123,13 @@
     }
     [self printHandOfPlayer:_dealer showCard:YES showBusted:YES];
     
-    if (_dealer.hand.highestUnbustedValue > _player.hand.highestUnbustedValue) {
+    if ([_dealer.hand isBusted]) {
+        [self setWinner:_player loser:_dealer];
+    }
+    else if (_dealer.hand.bestValue > _player.hand.bestValue) {
         [self setWinner:_dealer loser:_player];
     }
-    else if (_dealer.hand.highestUnbustedValue < _player.hand.highestUnbustedValue){
+    else if (_dealer.hand.bestValue < _player.hand.bestValue){
         [self setWinner:_player loser:_dealer];
     }
     else { //draw

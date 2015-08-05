@@ -29,7 +29,6 @@
 }
 
 - (void)start {
-    printf("Welcome to command line blackjack!\n");
     while (YES) {
         RoundController *round = [[RoundController alloc] initWithPlayer:_player dealer:_dealer deck:_deck roundNumber:_currentRoundNumber];
         [round start];
@@ -67,6 +66,7 @@
 }
 
 - (NSString*)getPlayerName {
+    printf("Welcome to command line blackjack!\n");
     printf("Please enter your name: ");
     
     //Get player's name

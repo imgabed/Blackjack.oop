@@ -49,17 +49,18 @@
     if (self.isBusted && showBusted) {
         printf("***BUSTED***\n");
     }
+    
+    if (showHiddenCard) {
+        printf("Value: %d\n", self.bestValue);
+    }
 }
 
 - (BOOL)isBusted {
     return _lowestValue > 21;
 }
 
-- (int)highestUnbustedValue {
-    if ([self isBusted]) {
-        return -1;
-    }
-    else if (_highestValue <= 21) {
+- (int)bestValue {
+    if (_highestValue <= 21) {
         return _highestValue;
     }
     else {

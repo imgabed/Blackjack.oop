@@ -13,7 +13,7 @@
 
 @property (readonly) int lowestValue;
 @property (readonly) int highestValue;
-@property (readonly) int highestUnbustedValue;
+@property (readonly) int bestValue;
 @property (readonly) BOOL isSoft;
 @property (readonly) BOOL isBusted;
 
