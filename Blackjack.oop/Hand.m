@@ -10,6 +10,8 @@
 
 @interface Hand ()
 
+@property int numAces;
+@property int visibleValue;
 @property (strong) NSMutableArray *cards;
 
 @end
@@ -21,6 +23,7 @@
     if (self) {
         _lowestValue = 0;
         _highestValue = 0;
+        _numAces = 0;
         _isSoft = NO;
         _cards = [[NSMutableArray alloc]init];
     }
@@ -30,6 +33,7 @@
 - (void)addCard:(Card *)card {
     if (card.isSoft) {
         _isSoft = YES;
+        _numAces++;
         _highestValue += 11;
     }
     else {
@@ -37,6 +41,9 @@
     }
     _lowestValue += card.value;
     
+    if (card.isFlipped) {
+        _visibleValue += card.value;
+    }
     [_cards addObject:card];
 }
 
@@ -46,7 +53,7 @@
         [card printCard:showHiddenCard];
     }
     
-    if (self.isBusted && showBusted) {
+    if ((self.isBusted && showBusted) || self.isVisiblyBusted) {
         printf("***BUSTED***\n");
     }
     
@@ -59,13 +66,27 @@
     return _lowestValue > 21;
 }
 
+- (BOOL)isVisiblyBusted {
+    return _visibleValue >= 21;
+}
+
 - (int)bestValue {
-    if (_highestValue <= 21) {
-        return _highestValue;
+    if (_isSoft) {
+        return [self getBestValueWithAces];
     }
-    else {
-        return _lowestValue;
+    return _lowestValue;
+}
+
+- (int)getBestValueWithAces {
+    int bestValue = _lowestValue;
+    for (int i = 0; i < _numAces; i++)
+    {
+        if (bestValue + 10 > 21) {
+            break;
+        }
+        bestValue += 10;
     }
+    return bestValue;
 }
 
 @end

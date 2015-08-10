@@ -14,6 +14,7 @@
 @property (readonly) int lowestValue;
 @property (readonly) int highestValue;
 @property (readonly) int bestValue;
+@property (readonly) BOOL isVisiblyBusted;
 @property (readonly) BOOL isSoft;
 @property (readonly) BOOL isBusted;
 

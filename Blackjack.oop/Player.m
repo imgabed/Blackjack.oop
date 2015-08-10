@@ -39,6 +39,10 @@
 }
 
 - (BOOL)shouldHit {
+    if (_hand.isVisiblyBusted) {
+        return NO;
+    }
+    
     while (YES) {
         char userInput[100];
         printf("\nHit or Stand (h/s)? ");

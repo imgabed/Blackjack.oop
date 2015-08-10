@@ -18,6 +18,7 @@
         _type = type;
         _isFlipped = NO;
         _cardName = [NSString stringWithFormat:@"%@ of %@", [self formatCardTypeToString], [self formatSuitTypeToString]];
+        _isSoft = NO;
         
         if (type == CardTypeAce)
         {

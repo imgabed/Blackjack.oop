@@ -46,7 +46,6 @@
 		863EBFE11B6DA17D008E40C5 /* RoundController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundController.m; sourceTree = "<group>"; };
 		863EBFE31B6FD1F4008E40C5 /* GameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameController.h; sourceTree = "<group>"; };
 		863EBFE41B6FD1F4008E40C5 /* GameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameController.m; sourceTree = "<group>"; };
-		86DC052A1B71E360001DF3E6 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +93,6 @@
 				863EBFE01B6DA17D008E40C5 /* RoundController.h */,
 				863EBFE11B6DA17D008E40C5 /* RoundController.m */,
 				863EBFC21B6D8997008E40C5 /* main.m */,
-				86DC052A1B71E360001DF3E6 /* README */,
 			);
 			path = Blackjack.oop;
 			sourceTree = "<group>";
